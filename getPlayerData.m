@@ -1,11 +1,14 @@
 function [name, url, img, score, badgeCount] = getPlayerData(id)
+    %Use screen-scraping to return information about a Cody player given Player ID
+    %   [name, url, img, score, badgeCount] = getPlayerData(id) 
+    
     url = sprintf('https://www.mathworks.com/matlabcentral/cody/players/%d',id);
     html = webread(url);
     
     profUrl = sprintf('https://www.mathworks.com/matlabcentral/cody/players/%d',id);
     profHtml = webread(profUrl);
-    profTarget = 'matlabcentral/profiles/(.*?)\.(jpg|JPG|png|PNG)';
-    tk = regexp(profHtml,profTarget,'tokens','once');
+    profTarget = 'matlabcentral/profiles/(.*?)\.(jpg|jpeg|png)';
+    tk = regexpi(profHtml,profTarget,'tokens','once');
     
     img = sprintf('https://www.mathworks.com/matlabcentral/profiles/%s.%s',tk{1},tk{2});
     
@@ -14,7 +17,7 @@ function [name, url, img, score, badgeCount] = getPlayerData(id)
     
     
     name = tk{3};
-    score = str2num(tk{1});
-    badgeCount = str2num(tk{2});
+    score = str2double(tk{1});
+    badgeCount = str2double(tk{2});
     
 end

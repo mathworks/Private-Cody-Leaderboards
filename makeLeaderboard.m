@@ -1,6 +1,6 @@
 function makeLeaderboard(filename, idList)
-    % Given a list of Cody IDs, make a private leaderboard
-    
+    % Given a list of Cody player IDs, make a private leaderboard
+       
     % First make a table with all the player information in it.
     scoreList = zeros(size(idList));
     badgeCountList = zeros(size(idList));

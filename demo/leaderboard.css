@@ -1,0 +1,20 @@
+html {
+    font-family: sans-serif;
+}
+
+table {
+    width: 800px;
+    border-collapse: collapse;
+    font-size: 24px;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #2F7EB2;
+    color: white;
+    text-align: left;
+}
