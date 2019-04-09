@@ -58,7 +58,7 @@ function makeRankPlot(scores, t, playerNames, nPlayers)
     set(gca,'XColor','none')
     ylabel('Rank')
     ylim([1 size(r,2)])
-    set(gca,'YTick',1:2:size(r,2))
+    set(gca,'YTick',1:size(r,2))
     title('Changes in Position')
     grid on
     
