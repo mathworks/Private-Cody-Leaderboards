@@ -1,3 +1,6 @@
+This code is listed on the File Exchange here:
+[Private Cody Leaderboard](https://www.mathworks.com/matlabcentral/fileexchange/70197-private-cody-leaderboard)
+
 # Private Cody Leaderboards
 
 This code creates a private leaderboard for Cody players. To use it, you need the Cody IDs of everyone you want to track on the board.
@@ -25,3 +28,7 @@ After you run the code shown above, you should end up with an HTML page that loo
 ![Example Leaderboard](leaderboard.png)
 
 Run it as often as you like to stay up to date with current situation. Remember, nothing motivates people to play like seeing where they are on the board!
+
+You can learn more about this code by referring to this post on the MATLAB Central Community blog:
+
+[Private Cody Leaderboards](https://blogs.mathworks.com/community/2019/04/08/private-cody-leaderboards/)
