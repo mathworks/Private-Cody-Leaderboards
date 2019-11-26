@@ -1,3 +1,5 @@
+[![View Private Cody Leaderboard on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/70197-private-cody-leaderboard)
+
 This code is listed on the File Exchange here:
 [Private Cody Leaderboard](https://www.mathworks.com/matlabcentral/fileexchange/70197-private-cody-leaderboard)
 
