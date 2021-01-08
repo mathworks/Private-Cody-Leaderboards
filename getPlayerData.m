@@ -18,7 +18,7 @@ img = sprintf('https://www.mathworks.com/matlabcentral/profiles/%s.%s',tk{1},tk{
 % extracting this way is the easy way. However, it only works if the user has played Cody and has activity on their
 % profile. Is it possible to have no activity but have a score? Not sure.
     target = '<a title="Score: (\d+), Badges: (\d+)".*?href="/matlabcentral/cody/players/.*?">(.*?)</a>';
-    tk = regexp(html,target,'tokens','once');
+    tk = regexpi(html,target,'tokens','once');
     if ~isempty(tk)
         name = tk{3};
         score = str2double(tk{1});
@@ -29,16 +29,16 @@ img = sprintf('https://www.mathworks.com/matlabcentral/profiles/%s.%s',tk{1},tk{
         
         % This is the only pattern that occurs for the name
         namePattern = '<h1 class="add_margin_10">(.+?)</h1>';
-        name = regexp(html,namePattern,'tokens','once');
+        name = regexpi(html,namePattern,'tokens','once');
         name = name{1};
         
         % White space \s can break up this set of html tags so we try to guard against
         % this by using the \s*
         scorePattern = '>\s*(\d*)\s*</h\d>\s*Score\s*</div>';
-        score = regexp(html,scorePattern,'tokens','once');
+        score = regexpi(html,scorePattern,'tokens','once');
         score = str2double(score{1});
         badgePattern = '>\s*(\d+)\s*</h\d>\s*Badges\s*</div>';
-       badgeCount = regexp(html,badgePattern,'tokens','once');
+       badgeCount = regexpi(html,badgePattern,'tokens','once');
        badgeCount = str2double(badgeCount{1});
     end
 end
