@@ -1,12 +1,12 @@
 <deployment-project plugin="plugin.toolbox" plugin-version="1.0">
-  <configuration file="C:\temp\Private-Cody-Leaderboards-1.0\ToolboxPackagingConfiguration.prj" location="C:\temp\Private-Cody-Leaderboards-1.0" name="ToolboxPackagingConfiguration" target="target.toolbox" target-name="Package Toolbox">
+  <configuration file="\\mathworks\devel\sandbox\gulley\github-ext-mw\Private-Cody-Leaderboards\ToolboxPackagingConfiguration.prj" location="\\mathworks\devel\sandbox\gulley\github-ext-mw\Private-Cody-Leaderboards" name="ToolboxPackagingConfiguration" target="target.toolbox" target-name="Package Toolbox">
     <param.appname>Private-Cody-Leaderboards-1.1</param.appname>
     <param.authnamewatermark>Ned Gulley</param.authnamewatermark>
     <param.email>gulley@mathworks.com</param.email>
     <param.company>MathWorks</param.company>
     <param.summary>This code creates a private leaderboard for Cody players.</param.summary>
     <param.description />
-    <param.screenshot />
+    <param.screenshot>${PROJECT_ROOT}\img\leaderboard.png</param.screenshot>
     <param.version>1.1</param.version>
     <param.output>${PROJECT_ROOT}\Private-Cody-Leaderboards-1.1.mltbx</param.output>
     <param.products.name />
@@ -64,7 +64,6 @@ resources/
     <param.additional.sw.linux.url />
     <unset>
       <param.description />
-      <param.screenshot />
       <param.output />
       <param.products.name />
       <param.products.id />
@@ -96,34 +95,74 @@ resources/
       <param.additional.sw.linux.url />
     </unset>
     <fileset.rootdir>
-      <file>${PROJECT_ROOT}</file>
+      <file>${PROJECT_ROOT}\distrib</file>
     </fileset.rootdir>
     <fileset.rootfiles>
-      <file>${PROJECT_ROOT}\addPlayerToFile.m</file>
-      <file>${PROJECT_ROOT}\Contents.m</file>
-      <file>${PROJECT_ROOT}\demo</file>
-      <file>${PROJECT_ROOT}\finding_cody_id.png</file>
-      <file>${PROJECT_ROOT}\gatherScoreData.m</file>
-      <file>${PROJECT_ROOT}\getPlayerData.m</file>
-      <file>${PROJECT_ROOT}\leaderboard.png</file>
-      <file>${PROJECT_ROOT}\leaderTableAtTime.m</file>
-      <file>${PROJECT_ROOT}\license.txt</file>
-      <file>${PROJECT_ROOT}\makeLeaderboard.m</file>
-      <file>${PROJECT_ROOT}\makeRankPlot.m</file>
-      <file>${PROJECT_ROOT}\makeScoreMatrix.m</file>
-      <file>${PROJECT_ROOT}\players.csv</file>
-      <file>${PROJECT_ROOT}\README.md</file>
+      <file>${PROJECT_ROOT}\distrib\addPlayerToFile.m</file>
+      <file>${PROJECT_ROOT}\distrib\Contents.m</file>
+      <file>${PROJECT_ROOT}\distrib\doc</file>
+      <file>${PROJECT_ROOT}\distrib\gatherScoreData.m</file>
+      <file>${PROJECT_ROOT}\distrib\getPlayerData.m</file>
+      <file>${PROJECT_ROOT}\distrib\leaderTableAtTime.m</file>
+      <file>${PROJECT_ROOT}\distrib\makeLeaderboard.m</file>
+      <file>${PROJECT_ROOT}\distrib\makeRankPlot.m</file>
+      <file>${PROJECT_ROOT}\distrib\makeScoreMatrix.m</file>
     </fileset.rootfiles>
-    <fileset.depfun.included />
+    <fileset.depfun.included>
+      <file>${PROJECT_ROOT}\players.csv</file>
+    </fileset.depfun.included>
     <fileset.depfun.excluded />
     <fileset.package />
     <build-deliverables>
-      <file location="${PROJECT_ROOT}" name="Private-Cody-Leaderboards-1.1.mltbx" optional="false">C:\temp\Private-Cody-Leaderboards-1.0\Private-Cody-Leaderboards-1.1.mltbx</file>
+      <file location="${PROJECT_ROOT}" name="Private-Cody-Leaderboards-1.1.mltbx" optional="false">\\mathworks\devel\sandbox\gulley\github-ext-mw\Private-Cody-Leaderboards\Private-Cody-Leaderboards-1.1.mltbx</file>
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>C:\Program Files\MATLAB\R2020a</root>
-      <toolboxes />
+      <root>E:\jobarchive\Bmain\2022_06_24_h15m16s28_job1997360_pass\matlab</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="gpucoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="neuralnetwork" />
+        <toolbox name="polyspacebugfinder" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+      <toolbox>
+        <polyspacebugfinder>
+          <enabled>true</enabled>
+        </polyspacebugfinder>
+      </toolbox>
     </matlab>
     <platform>
       <unix>false</unix>

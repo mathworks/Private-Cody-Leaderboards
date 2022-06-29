@@ -9,7 +9,7 @@ This code creates a private leaderboard for Cody players. To use it, you need th
 
 Here is how to find a player's Cody ID.
 
-![How to find the Cody ID](finding_cody_id.png)
+![How to find the Cody ID](img/finding_cody_id.png)
 
 Once you have everyone's Cody ID, call the code like this.
 
@@ -27,7 +27,7 @@ Once you have everyone's Cody ID, call the code like this.
 
 After you run the code shown above, you should end up with an HTML page that looks something like this.
 
-![Example Leaderboard](leaderboard.png)
+![Example Leaderboard](img/leaderboard.png)
 
 Run it as often as you like to stay up to date with current situation. Remember, nothing motivates people to play like seeing where they are on the board!
 
