@@ -38,7 +38,26 @@ classdef leaderboardTest < matlab.unittest.TestCase
             idList = [734801; 3529521; 5349647; 4345310;];
             players = addPlayerToFile(playerFilename,idList,"new")
             testCase.verifyEqual(height(players),4)
-        end        
+        end
+
+        function scoreTableTest(testCase)
+            dirname = tempdir;
+            playerFilename = fullfile(dirname,"players.csv");
+            idList = [734801; 3529521;];
+            players = addPlayerToFile(playerFilename,idList,"new")
+
+            scoresFilename = fullfile(dirname,"scores.csv");
+            scoreTable = gatherScoreData(scoresFilename,players.ID)
+
+            % Make a Leaderboard Table
+            t1 = datetime('now')
+            currentTable = leaderTableAtTime(players, scoreTable, t1)
+
+            [scoreMatrix,t,playerNames] = makeScoreMatrix(scoreTable, players);
+
+            plot(t,scoreMatrix,'.-','MarkerSize',12)
+            legend(playerNames,"Location","eastoutside")
+        end
 
     end
 

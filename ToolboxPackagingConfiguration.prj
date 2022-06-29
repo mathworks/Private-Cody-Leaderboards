@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.toolbox" plugin-version="1.0">
-  <configuration build-checksum="3634890474" file="\\mathworks\devel\sandbox\gulley\github-ext-mw\Private-Cody-Leaderboards\ToolboxPackagingConfiguration.prj" location="\\mathworks\devel\sandbox\gulley\github-ext-mw\Private-Cody-Leaderboards" name="ToolboxPackagingConfiguration" target="target.toolbox" target-name="Package Toolbox">
+  <configuration build-checksum="4278334990" file="\\mathworks\devel\sandbox\gulley\github-ext-mw\Private-Cody-Leaderboards\ToolboxPackagingConfiguration.prj" location="\\mathworks\devel\sandbox\gulley\github-ext-mw\Private-Cody-Leaderboards" name="ToolboxPackagingConfiguration" target="target.toolbox" target-name="Package Toolbox">
     <param.appname>Private-Cody-Leaderboards</param.appname>
     <param.authnamewatermark>Ned Gulley</param.authnamewatermark>
     <param.email>gulley@mathworks.com</param.email>
@@ -109,9 +109,7 @@ resources/
       <file>${PROJECT_ROOT}\distrib\makeScoreMatrix.m</file>
     </fileset.rootfiles>
     <fileset.depfun.included />
-    <fileset.depfun.excluded>
-      <file>${PROJECT_ROOT}\players.csv</file>
-    </fileset.depfun.excluded>
+    <fileset.depfun.excluded />
     <fileset.package />
     <build-deliverables>
       <file location="${PROJECT_ROOT}" name="Private-Cody-Leaderboards.mltbx" optional="false">\\mathworks\devel\sandbox\gulley\github-ext-mw\Private-Cody-Leaderboards\Private-Cody-Leaderboards.mltbx</file>
