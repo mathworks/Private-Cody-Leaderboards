@@ -14,8 +14,7 @@ function [name, url, img, score, badgeCount] = getPlayerData(id)
     
     target = '<a title="Score: (\d+), Badges: (\d+).*?>(.*?)</a>';
     tk = regexp(html,target,'tokens','once');
-    
-    
+        
     name = tk{3};
     score = str2double(tk{1});
     badgeCount = str2double(tk{2});
