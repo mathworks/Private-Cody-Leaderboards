@@ -32,7 +32,27 @@ function makeLeaderboard(filename, idList)
     
     fid = fopen(filename,'w');
     fprintf(fid,'<html>\n');
-    fprintf(fid,'<head><link href="leaderboard.css" rel="stylesheet" type="text/css"></head>\n');
+    
+    % Styles in the Head
+    fprintf(fid,'<head>\n');
+    fprintf(fid,'<style>\n');
+    fprintf(fid,'html {\n');
+    fprintf(fid,'    font-family: sans-serif;}\n');
+    fprintf(fid,'table {\n');
+    fprintf(fid,'    width: 800px;\n');
+    fprintf(fid,'    border-collapse: collapse;\n');
+    fprintf(fid,'    font-size: 24px;}\n');
+    fprintf(fid,'th, td {\n');
+    fprintf(fid,'    border-bottom: 1px solid #ddd;\n');
+    fprintf(fid,'    padding: 8px;}\n');
+    fprintf(fid,'th {\n');
+    fprintf(fid,'    background-color: #2F7EB2;\n');
+    fprintf(fid,'    color: white;\n');
+    fprintf(fid,'    text-align: left;}\n');
+    fprintf(fid,'</style>\n');
+    fprintf(fid,'</head>\n');
+        
+    % Body
     fprintf(fid,'<body>\n');
     
     fprintf(fid,'<h1>Cody Private Leaderboard</h1>\n');
