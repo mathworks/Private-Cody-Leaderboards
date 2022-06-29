@@ -1,0 +1,144 @@
+<deployment-project plugin="plugin.toolbox" plugin-version="1.0">
+  <configuration file="C:\temp\Private-Cody-Leaderboards-1.0\ToolboxPackagingConfiguration.prj" location="C:\temp\Private-Cody-Leaderboards-1.0" name="ToolboxPackagingConfiguration" target="target.toolbox" target-name="Package Toolbox">
+    <param.appname>Private-Cody-Leaderboards-1.1</param.appname>
+    <param.authnamewatermark>Ned Gulley</param.authnamewatermark>
+    <param.email>gulley@mathworks.com</param.email>
+    <param.company>MathWorks</param.company>
+    <param.summary>This code creates a private leaderboard for Cody players.</param.summary>
+    <param.description />
+    <param.screenshot />
+    <param.version>1.1</param.version>
+    <param.output>${PROJECT_ROOT}\Private-Cody-Leaderboards-1.1.mltbx</param.output>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.guid>66081226-b8f4-4e38-88de-1232ea3d644f</param.guid>
+    <param.exclude.filters>% List files contained in your toolbox folder that you would like to exclude
+% from packaging.  Excludes should be listed relative to the toolbox folder.
+% Some examples of how to specify excludes are provided below:
+%
+% A single file in the toolbox folder:
+% .svn
+%
+% A single file in a subfolder of the toolbox folder:
+% example/.svn
+%
+% All files in a subfolder of the toolbox folder:
+% example/*
+%
+% All files of a certain name in all subfolders of the toolbox folder:
+% **/.svn
+%
+% All files matching a pattern in all subfolders of the toolbox folder:
+% **/*.bak
+%
+resources/
+**/*.prj
+*.mltbx</param.exclude.filters>
+    <param.exclude.pcodedmfiles>true</param.exclude.pcodedmfiles>
+    <param.examples />
+    <param.demosxml />
+    <param.apps />
+    <param.registered.apps />
+    <param.docs />
+    <param.getting.started.guide />
+    <param.matlabpath.excludes />
+    <param.javaclasspath.excludes />
+    <param.exported.on.package>false</param.exported.on.package>
+    <param.required.addons />
+    <param.matlab.project.id>a8595f98-12ea-4771-9dc2-ed13a035c06c</param.matlab.project.id>
+    <param.matlab.project.name>Private-Cody-Leaderboards-1.0</param.matlab.project.name>
+    <param.release.start />
+    <param.release.end />
+    <param.release.current.only>false</param.release.current.only>
+    <param.compatiblity.windows>true</param.compatiblity.windows>
+    <param.compatiblity.macos>true</param.compatiblity.macos>
+    <param.compatiblity.linux>true</param.compatiblity.linux>
+    <param.compatiblity.matlabonline>true</param.compatiblity.matlabonline>
+    <param.installation.map />
+    <param.additional.sw.names />
+    <param.additional.sw.licenses />
+    <param.additional.sw.win.url />
+    <param.additional.sw.mac.url />
+    <param.additional.sw.linux.url />
+    <unset>
+      <param.description />
+      <param.screenshot />
+      <param.output />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+      <param.exclude.pcodedmfiles />
+      <param.examples />
+      <param.demosxml />
+      <param.apps />
+      <param.registered.apps />
+      <param.docs />
+      <param.getting.started.guide />
+      <param.matlabpath.excludes />
+      <param.javaclasspath.excludes />
+      <param.exported.on.package />
+      <param.required.addons />
+      <param.release.start />
+      <param.release.end />
+      <param.release.current.only />
+      <param.compatiblity.windows />
+      <param.compatiblity.macos />
+      <param.compatiblity.linux />
+      <param.compatiblity.matlabonline />
+      <param.installation.map />
+      <param.additional.sw.names />
+      <param.additional.sw.licenses />
+      <param.additional.sw.win.url />
+      <param.additional.sw.mac.url />
+      <param.additional.sw.linux.url />
+    </unset>
+    <fileset.rootdir>
+      <file>${PROJECT_ROOT}</file>
+    </fileset.rootdir>
+    <fileset.rootfiles>
+      <file>${PROJECT_ROOT}\addPlayerToFile.m</file>
+      <file>${PROJECT_ROOT}\Contents.m</file>
+      <file>${PROJECT_ROOT}\demo</file>
+      <file>${PROJECT_ROOT}\finding_cody_id.png</file>
+      <file>${PROJECT_ROOT}\gatherScoreData.m</file>
+      <file>${PROJECT_ROOT}\getPlayerData.m</file>
+      <file>${PROJECT_ROOT}\leaderboard.png</file>
+      <file>${PROJECT_ROOT}\leaderTableAtTime.m</file>
+      <file>${PROJECT_ROOT}\license.txt</file>
+      <file>${PROJECT_ROOT}\makeLeaderboard.m</file>
+      <file>${PROJECT_ROOT}\makeRankPlot.m</file>
+      <file>${PROJECT_ROOT}\makeScoreMatrix.m</file>
+      <file>${PROJECT_ROOT}\players.csv</file>
+      <file>${PROJECT_ROOT}\README.md</file>
+    </fileset.rootfiles>
+    <fileset.depfun.included />
+    <fileset.depfun.excluded />
+    <fileset.package />
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}" name="Private-Cody-Leaderboards-1.1.mltbx" optional="false">C:\temp\Private-Cody-Leaderboards-1.0\Private-Cody-Leaderboards-1.1.mltbx</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2020a</root>
+      <toolboxes />
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
