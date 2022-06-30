@@ -2,10 +2,12 @@ function players = addPlayerToFile(filename,idList,option)
     %addPlayerToFile Add one or more Cody players to a designated CSV file
     %   players = addPlayerToFile(filename,idList,option)
     
-    if nargin < 3
-        option = "";
+    arguments
+        filename {mustBeText}
+        idList {mustBeNumeric}
+        option {mustBeTextScalar} = ""
     end
-    
+
     names = strings(size(idList));
     for i = 1:length(idList)
         name = getPlayerData(idList(i));

@@ -1,10 +1,17 @@
-function scoreTable = gatherScoreData(filename, idList)
+function scoreTable = gatherScoreData(filename, idList, option)
     % Get the scores for all the players listed in the idList
+
+    arguments
+        filename {mustBeText}
+        idList {mustBeNumeric}
+        option {mustBeTextScalar} = ""
+    end
+
     
-    if exist(filename,'file')
-        scoreTable = readtimetable(filename);
-    else
+    if isequal(option,"new") || ~exist(filename,'file') 
         scoreTable = [];
+    else
+        scoreTable = readtimetable(filename);
     end
     
     % First make a table with all the player information in it.
