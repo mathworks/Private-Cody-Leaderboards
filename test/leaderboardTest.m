@@ -17,6 +17,13 @@ classdef leaderboardTest < matlab.unittest.TestCase
             testCase.verifyEqual(name,'Binbin Qi');
             testCase.verifyEqual(url,'https://www.mathworks.com/matlabcentral/cody/players/734801');
             testCase.verifyEqual(img,'https://www.mathworks.com/matlabcentral/profiles/734801.jpg');
+
+            % Player has zero points
+            playerId = 17822850;
+            [name, url, img, score, badgeCount] = getPlayerData(playerId);
+            testCase.verifyEqual(name,'Andreea Nistor');
+            testCase.verifyEqual(score,0);
+            testCase.verifyEqual(badgeCount,0);
         end
 
         function makeLeaderboardTest(testCase)
@@ -43,7 +50,7 @@ classdef leaderboardTest < matlab.unittest.TestCase
         function scoreTableTest(testCase)
             dirname = tempdir;
             playerFilename = fullfile(dirname,"players.csv");
-            idList = [734801; 3529521;];
+            idList = [734801; 3529521; 17822850;];
             players = addPlayerToFile(playerFilename,idList,"new")
 
             scoresFilename = fullfile(dirname,"scores.csv");
