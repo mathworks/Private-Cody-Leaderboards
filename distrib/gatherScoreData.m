@@ -6,7 +6,6 @@ function scoreTable = gatherScoreData(filename, idList, option)
         idList {mustBeNumeric}
         option {mustBeTextScalar} = ""
     end
-
     
     if isequal(option,"new") || ~exist(filename,'file') 
         scoreTable = [];

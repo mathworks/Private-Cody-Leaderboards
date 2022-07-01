@@ -12,7 +12,7 @@ function makeRankPlot(scores, t, playerNames, nPlayers)
     % r is the rank matrix
     r = zeros(size(scores));
     for i = 1:length(t)
-        [ss,ix] = sort(scores(i,:),'descend');
+        [ss,ix] = sort(scores(i,:),"descend");
         rr = (1:nPlayers) - sum(isnan(ss));
         rr(rr<1) = NaN;
         r(i,ix) = rr;
@@ -42,23 +42,23 @@ function makeRankPlot(scores, t, playerNames, nPlayers)
         hold all
         if length(x2)>1
             r2 = pchip(x1,rr,x2);
-            plot(x2,r2,'Color','white','LineWidth',5)
-            h(i) = plot(x2,r2,'LineWidth',3);
+            plot(x2,r2,Color="white",LineWidth=5)
+            h(i) = plot(x2,r2,LineWidth=3);
         else
-            h(i) = plot(x1(1),rr(1),'LineWidth',3);    
+            h(i) = plot(x1(1),rr(1),LineWidth=3);    
         end
-        plot(x1([1 end]),rr([1 end]),'LineStyle','none', ...
-            'Marker','.','MarkerSize',22, ...
-            'Color',get(h(i),'Color'))
+        plot(x1([1 end]),rr([1 end]),LineStyle="none", ...
+            Marker=".",MarkerSize=22, ...
+            Color=get(h(i),'Color'))
     end
     hold off
     legend(h,playerNames,"Location","eastoutside")
-    set(gca,'YDir','reverse')
-    set(gca,'XTick',[])
-    set(gca,'XColor','none')
+    set(gca,YDir="reverse")
+    set(gca,XTick=[])
+    set(gca,XColor="none")
     ylabel('Rank')
     ylim([1 size(r,2)])
-    set(gca,'YTick',1:size(r,2))
+    set(gca,YTick=1:size(r,2))
     title('Changes in Position')
     grid on
     

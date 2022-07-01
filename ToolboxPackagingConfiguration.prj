@@ -1,6 +1,6 @@
 <deployment-project plugin="plugin.toolbox" plugin-version="1.0">
   <configuration build-checksum="4278334990" file="\\mathworks\devel\sandbox\gulley\github-ext-mw\Private-Cody-Leaderboards\ToolboxPackagingConfiguration.prj" location="\\mathworks\devel\sandbox\gulley\github-ext-mw\Private-Cody-Leaderboards" name="ToolboxPackagingConfiguration" target="target.toolbox" target-name="Package Toolbox">
-    <param.appname>Private-Cody-Leaderboards</param.appname>
+    <param.appname>Private Cody Leaderboards</param.appname>
     <param.authnamewatermark>Ned Gulley</param.authnamewatermark>
     <param.email>gulley@mathworks.com</param.email>
     <param.company>MathWorks</param.company>
@@ -8,7 +8,7 @@
     <param.description />
     <param.screenshot>${PROJECT_ROOT}\img\leaderboard.png</param.screenshot>
     <param.version>1.2</param.version>
-    <param.output>${PROJECT_ROOT}\Private-Cody-Leaderboards.mltbx</param.output>
+    <param.output>${PROJECT_ROOT}\Private Cody Leaderboards.mltbx</param.output>
     <param.products.name />
     <param.products.id />
     <param.products.version />
@@ -42,7 +42,7 @@ resources/
     <param.apps />
     <param.registered.apps />
     <param.docs />
-    <param.getting.started.guide />
+    <param.getting.started.guide>${PROJECT_ROOT}\distrib\doc\GettingStarted.mlx</param.getting.started.guide>
     <param.matlabpath.excludes />
     <param.javaclasspath.excludes />
     <param.exported.on.package>false</param.exported.on.package>
@@ -75,7 +75,6 @@ resources/
       <param.apps />
       <param.registered.apps />
       <param.docs />
-      <param.getting.started.guide />
       <param.matlabpath.excludes />
       <param.javaclasspath.excludes />
       <param.exported.on.package />
@@ -112,7 +111,7 @@ resources/
     <fileset.depfun.excluded />
     <fileset.package />
     <build-deliverables>
-      <file location="${PROJECT_ROOT}" name="Private-Cody-Leaderboards.mltbx" optional="false">\\mathworks\devel\sandbox\gulley\github-ext-mw\Private-Cody-Leaderboards\Private-Cody-Leaderboards.mltbx</file>
+      <file location="${PROJECT_ROOT}" name="Private Cody Leaderboards.mltbx" optional="false">\\mathworks\devel\sandbox\gulley\github-ext-mw\Private-Cody-Leaderboards\Private Cody Leaderboards.mltbx</file>
     </build-deliverables>
     <workflow />
     <matlab>
