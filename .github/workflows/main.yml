@@ -1,4 +1,4 @@
-name: Run MATLAB Tests on GitHub-Hosted Runner
+name: Cody Leaderboards CI
 on: 
   push:
     branches: [ "main" ]
