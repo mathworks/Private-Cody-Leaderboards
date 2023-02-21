@@ -1,5 +1,6 @@
 function currentTable = leaderTableAtTime(playerTable, scoreTable, t1)
     %leaderTableAtTime Return the list of leaders at a specified time
+    %   currentTable = leaderTableAtTime(playerTable, scoreTable, t1)
     
     if nargin < 3
         t1 = datetime("now");
