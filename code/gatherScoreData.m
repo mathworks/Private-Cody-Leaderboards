@@ -1,5 +1,6 @@
 function scoreTable = gatherScoreData(filename, idList, option)
     % Get the scores for all the players listed in the idList
+    %    scoreTable = gatherScoreData(filename, idList, option)
 
     arguments
         filename {mustBeText}
