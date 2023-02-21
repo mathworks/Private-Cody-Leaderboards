@@ -1,6 +1,6 @@
-[![View Private Cody Leaderboard on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/70197-private-cody-leaderboard)
+[![View Private Cody Leaderboard on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/70197-private-cody-leaderboard) [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=mathworks/Private-Cody-Leaderboards&project=PrivateCodyLeaderboards.prj&file=code/doc/GettingStarted.mlx)
 
-[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=mathworks/Private-Cody-Leaderboards&project=PrivateCodyLeaderboards.prj&file=code/doc/GettingStarted.mlx)
+[![Private-Cody-Leaderboards CI/CD](https://github.com/mathworks/Private-Cody-Leaderboards/actions/workflows/main.yml/badge.svg)](https://github.com/mathworks/Private-Cody-Leaderboards/actions/workflows/main.yml) [![GitHub issues by-label](https://img.shields.io/github/issues-raw/mathworks/Private-Cody-Leaderboards/bug)](https://github.com/mathworks/Private-Cody-Leaderboards/issues?q=is%3Aissue+is%3Aopen+label%3Abug) ![GitHub Repo stars](https://img.shields.io/github/stars/mathworks/Private-Cody-Leaderboards?style=social)
 
 This code is listed on the File Exchange here:
 [Private Cody Leaderboard](https://www.mathworks.com/matlabcentral/fileexchange/70197-private-cody-leaderboard)
